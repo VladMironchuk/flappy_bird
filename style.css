@@ -1,0 +1,152 @@
+@font-face {
+    font-family: FlappyBirdy;
+    src: url('fonts/FlappyBirdy.ttf');
+}
+
+body{
+    overflow: hidden;
+}
+
+canvas{
+    display: block;
+    margin: 5vw auto;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+    color: #000;
+}
+
+main{
+    position: relative;
+    font-family: FlappyBirdy;
+}
+
+.back {
+    width: 100vw;
+    height: 103vh;
+}
+
+.main__h1{
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 5vw;
+    left: 45vw;
+    top: 25vw;
+    transition: 300ms;
+    letter-spacing: 2px;
+}
+
+.hello{
+    position: absolute;
+    font-size: 6vw;
+    letter-spacing: 5px;
+    left: 37vw;
+    top: 1vw;
+}
+
+.main__h1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.registration{
+    display: block;
+    position: absolute;
+    left: 42vw;
+    top: 10vw;
+}
+
+.registration label {
+    font-size: 3vw;
+}
+
+.registration input[type=text]{
+    width: 20vw;
+    margin-top: 1vw;
+    outline: none;
+    font-size: 3vw;
+    background: rgba(0,0,0,0);
+    margin-left: -4vw;
+    
+}
+
+.registration button{
+    font-size: 3vw;
+    background: rgba(0,0,0,0);
+    outline: 0;
+    border: 0;
+    margin-left: 3vw;
+    transition: 300ms;
+}
+
+.registration button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main__h1_score {
+    position: absolute;
+    font-size: 3vw;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    left: 39vw;
+    top: 22vw;
+}
+
+.difficulty{
+    position: absolute;
+    font-size: 3vw;
+    left: 34vw;
+    top: 17vw;
+}
+
+.difficulty input[type=radio]{
+    width: 2vw;
+}
+
+h2 {
+    position: absolute;
+    font-size: 3vw;
+    left: 41vw;
+    top: 10vw;
+    letter-spacing: 2px;
+}
+
+.reset {
+    position: absolute;
+    width: 1.5vw;
+    height: 1.5vw;
+    left: 54vw;
+    top: 24.7vw;
+}
+
+.reset:hover{
+    cursor: pointer;
+}
+
+.quit{
+    font-family: FlappyBirdy;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    margin-bottom: -10px;
+}
+
+.quit:hover{
+    cursor: pointer;
+}
+
+.restart{
+    position: absolute;
+    font-family: FlappyBirdy;
+    letter-spacing: 2px;
+    font-size: 3vw;
+    left: 46.5vw;
+    top: 38vw;
+    visibility: hidden;
+}
